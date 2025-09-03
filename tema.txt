@@ -1,0 +1,4 @@
+É uma porra de página fodida que a gente fodendo apresenta a porra dos inimigos da porra do nosso jogo. 
+É basicamente a porra de uma fodendo flatlist mostrando a porra dos personagens e a porra dos inimigos, com a porra de uma descrição e a porra do nome dos personagens
+
+Link para ajudar talvez: https://reactnative.dev/docs/flatlist
