@@ -1,24 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import TelaInicial from './src/Telas/TelaInicial';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Inimigos = [
-  // { ID: '1', Nome: 'Maconha', Descricao: 'Folha', Imagem: 'Insera o sprite aqui' },
-  // { ID: '1', Nome: 'Maconha', Descricao: 'Folha', Imagem: 'Insera o sprite aqui' },
-  // { ID: '1', Nome: 'Maconha', Descricao: 'Folha', Imagem: 'Insera o sprite aqui' },
-  // { ID: '1', Nome: 'Maconha', Descricao: 'Folha', Imagem: 'Insera o sprite aqui' },
-  // { ID: '1', Nome: 'Maconha', Descricao: 'Folha', Imagem: 'Insera o sprite aqui' }
-  "maconha", "cocaína", "crack", "metanfetamina", "LSD", "Metal Gear Solid 4: Guns of the Patriots"
-]
+const stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View>
-      <FlatList data={Inimigos} keyExtractor={(item, index) => index.toString()} renderItem={({ item }) => <Text style={[{fontSize: 200}]}>{item}</Text>}/>
-      <Image source={item.Imagem}/>
-    </View>
-    //passa todo esse código para o TelaInicial.js
-    //O terreno deve tá pronto
+    <NavigationContainer>
+      <stack.Navigator initialRouteName="Inicio">
+        <stack.Screen name="Inicio" component={TelaInicial} />
+      </stack.Navigator>
+    </NavigationContainer>
   );
 }
 
