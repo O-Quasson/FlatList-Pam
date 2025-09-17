@@ -21,7 +21,7 @@ const Inimigos = [
     { id: '1', nome: 'Cerberus', descricao: 'É um cachorro selvagem. Por algum motivo ele tem 3 cabeças. Eu não acho que ele tenha tomado vacina para raiva...', imagem: cerberus},
     { id: '2', nome: 'Bubblebee', descricao: 'É uma abelha e uma bolha ao mesmo tempo. Não me pergunte como isso funciona. Como que ela pega pólen se bolhas estouram fácil fácil?', imagem: bubblebee },
     { id: '3', nome: 'Pukeko', descricao: 'DAAAAAAAAAMMMMMMMMMNNNNNNNNNNNNNN!!!!!!!!!!!!', imagem: pukeko },
-    { id: '4', nome: 'Leavi', descricao: 'Uma folha que criou vida. Ela conseguiu arranjar um lápis (não se sabe de onde) e desenhou o próprio rosto. Ela é uma péssima artista', imagem: leavi },
+    { id: '4', nome: 'Leavy Billy', descricao: 'Uma folha que criou vida. Ela conseguiu arranjar um lápis (não se sabe de onde) e desenhou o próprio rosto. Ela é uma péssima artista e tem um péssimo gosto para nomes', imagem: leavi },
     { id: '5', nome: 'Stealler', descricao: 'Um ladrão que ronda os arredores da vila e usa uma máscara de coruja. Ele usa roupas grandes e largas achando que tá arrasando, mas na verdade ele só tem um senso de moda horrível', imagem: stealler }
 ]
 
@@ -76,5 +76,6 @@ const TelaInicial = () => {
 const style = StyleSheet.create({
 
 });
+
 
 export { TelaInicial }
